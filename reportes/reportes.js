@@ -10,6 +10,9 @@ function generarReporte(usuarios) {
 function conteoPorDominio(usuarios) {
   const conteo = {};
   for (const u of usuarios) {
+     if (!u.correo || !u.correo.includes("@")) {
+      continue; // evita error con correos inválidos
+    }
     const dominio = u.correo.split("@")[1];
     conteo[dominio] = (conteo[dominio] || 0) + 1;
   }
