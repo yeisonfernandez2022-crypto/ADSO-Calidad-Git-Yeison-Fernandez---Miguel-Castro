@@ -5,8 +5,26 @@
 
 const usuarios = [];
 
+function validarDatos(nombre, correo) {
+  if (!nombre || !nombre.trim()) {
+    throw new Error("El nombre es obligatorio");
+  }
+
+  const correoLimpio = correo.trim();
+  if (
+    !correoLimpio.includes("@") ||
+    correoLimpio.startsWith("@") ||
+    correoLimpio.endsWith("@")
+  ) {
+    throw new Error('El correo "' + correoLimpio + '" no es válido');
+  }
+
+  return correoLimpio;
+}
+
 function registrarUsuario(nombre, correo) {
-  const usuario = { nombre: nombre, correo: correo };
+  const correoValido = validarDatos(nombre, correo);
+  const usuario = { nombre: nombre.trim(), correo: correoValido };
   usuarios.push(usuario);
   return true;
 }
