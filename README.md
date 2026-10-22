@@ -40,4 +40,7 @@ ADSO (Análisis y Desarrollo de Software).
 1. Configuración del repositorio central y exclusiones (`.gitignore`).
 2. Trabajo por ramas de calidad (feature branches, mínimo 3 commits atómicos por rama).
 3. Pull Request, code review (rol SQA) y resolución de conflictos.
-4. Resolución de conflicto en README.md
+HEAD
+4. Resolución de conflicto en `README.md` (Aprendiz A: Yeison — desde la rama `feature/conflicto-readme`)
+5. Resolución de conflicto en README.md
+
