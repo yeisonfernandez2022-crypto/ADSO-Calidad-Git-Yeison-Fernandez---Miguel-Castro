@@ -27,6 +27,14 @@ ADSO (Análisis y Desarrollo de Software).
 - El `.gitignore` excluye de forma estricta logs, binarios y archivos `.env`
   (secretos/credenciales nunca van al repositorio).
 
+## 🧾 Módulo de Registro (rama `feature/modulo-registro`)
+
+> Aprendiz A: Yeison Fernandez (`@yeisonfernandez2022`)
+
+- Permite registrar usuarios con validación de nombre y correo.
+- Normaliza los correos a minúsculas y **rechaza correos duplicados**.
+- Código ubicado en `registro/` (función `registrarUsuario`). Más detalle en `registro/README.md`.
+
 ## 🎯 Fases de la práctica
 
 1. Configuración del repositorio central y exclusiones (`.gitignore`).
