@@ -23,7 +23,14 @@ function validarDatos(nombre, correo) {
 }
 
 function registrarUsuario(nombre, correo) {
-  const correoValido = validarDatos(nombre, correo);
+  const correoValido = validarDatos(nombre, correo).toLowerCase();
+
+  for (const u of usuarios) {
+    if (u.correo === correoValido) {
+      return false; // correo duplicado: no se registra
+    }
+  }
+
   const usuario = { nombre: nombre.trim(), correo: correoValido };
   usuarios.push(usuario);
   return true;
