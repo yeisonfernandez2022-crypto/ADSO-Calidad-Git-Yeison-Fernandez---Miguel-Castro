@@ -1,0 +1,92 @@
+# ==============================================================
+# Proyecto: ADSO-Calidad-Git-Yeison-Fernandez---Miguel-Castro
+# .gitignore estricto — Excluye: logs, binarios y archivos .env
+# Configurado por: Desarrollador A (Yeison Fernandez)
+# ==============================================================
+
+# ------------------------------------------------------------
+# 1) REGISTROS / LOGS
+# ------------------------------------------------------------
+*.log
+*.log.*
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log.gz
+
+# ------------------------------------------------------------
+# 2) ENTORNOS Y SECRETOS (archivos .env)
+# ------------------------------------------------------------
+.env
+.env.*
+*.env
+!.env.example
+!.env.example.*
+*.pem
+*.key
+
+# ------------------------------------------------------------
+# 3) BINARIOS
+# ------------------------------------------------------------
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.dat
+*.o
+*.obj
+*.out
+*.class
+*.jar
+*.war
+*.ear
+*.pyc
+*.pyo
+*.py[cod]
+__pycache__/
+
+# ------------------------------------------------------------
+# 4) ARTEFACTOS DE COMPILACIÓN / DEPENDENCIAS
+# ------------------------------------------------------------
+node_modules/
+build/
+dist/
+out/
+target/
+bin/
+obj/
+coverage/
+*.pdb
+*.cache
+
+# ------------------------------------------------------------
+# 5) ENTORNOS VIRTUALES
+# ------------------------------------------------------------
+venv/
+.venv/
+env/
+pip-log.txt
+
+# ------------------------------------------------------------
+# 6) BASES DE DATOS LOCALES
+# ------------------------------------------------------------
+*.db
+*.sqlite3
+*.mdb
+*.accdb
+
+# ------------------------------------------------------------
+# 7) IDE Y SISTEMA OPERATIVO
+# ------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
